@@ -1,0 +1,713 @@
+ body *
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html
+{
+	overflow: auto;
+}
+
+
+
+
+
+
+
+
+/* start header*/
+.header
+{ 
+	height:350px ;
+	position: relative;
+
+}
+
+
+.header .overlay
+{
+	background-color: rgba(0, 0, 0, 0.24);;
+	height: 100%;
+	padding: 5% 0;
+	width: 100%;
+}
+
+.header .overlay h1
+{
+	font-size: 50px;
+	margin-bottom: 3%;
+}
+
+.header .overlay .plan
+{
+	border: 2px solid white;
+	font-size: 20px;
+	width: 48%;
+	margin-right: 1%;
+	margin-left: 1%;
+	padding: 10px;
+}
+
+
+.header .overlay .order
+{
+	border: 2px solid white;
+	font-size: 20px;
+	padding: 10px;
+	margin: 2% 1% 0;
+}
+@media(max-width:420px /*for smaller than 420px*/) /* to oragize praghraphes in small screens */
+{
+	h1
+	{
+		margin-top: 20px !important;
+		font-size: 50px !important;
+	}
+
+	.header .overlay .plan
+	{
+		float: none;
+		margin: 0 auto 10px; 
+	}
+}
+@media(max-width:767px/*for smaller than 767px*/)
+{
+
+	.header .overlay .plan
+	{
+		float: none;
+		margin: 0 auto 10px; 
+		font-size: 22px;
+	}
+}
+/* end header*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start features */
+
+.features 
+{
+	margin: 2%;
+}
+
+.features .h1
+{
+	font-size: 50px;
+	color: #555;
+}
+
+
+	
+.features .feat
+{
+	float: left;
+	color: #555;
+	padding: 0 20px 0 0 ;
+	margin-bottom: 10px;
+}
+
+
+.features .feat h2
+{
+	margin: 10px 0 5px;
+	
+}
+
+.features .feat p
+{
+	line-height: 1.2;
+
+}
+
+
+
+@media (max-width: 768px) /* so small screen rules*/
+{
+	.features .feat
+	{
+		width: 100%;
+		padding-left: 20px;
+		padding-bottom: 20px;
+	}
+	.features .feat:nth-of-type(even)
+	{
+		background-color: lightgray;
+	}
+}
+
+@media (max-width: 991px) and (min-width: 769px) /* small screen rules*/
+{
+	.features .feat:first-of-type
+	{
+		width: 100%;
+	}
+	.features .feat:not(:first-of-type)
+	{
+		width: 50%;
+	}
+	.features .feat
+	{
+		text-align: center;
+	}
+}
+
+@media (min-width: 992px)/* medium screen rules*/
+{
+	.features .feat
+	{
+		width: 33.3333333333%;
+	}
+}
+
+
+/* end features */
+
+
+
+
+
+
+
+
+
+
+
+/* start About us */
+
+	.aboutus
+	{
+		background:#EEE;
+		padding: 5% 0 ;
+	}
+
+	.aboutus .h1
+	{
+		font-size: 50px;
+		color: #848484;
+	}
+/* end About us */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start ourWork */
+.ourWork 
+{
+	
+	max-width: 100%;
+	margin: 0;
+	padding-left: 2%
+}
+
+.ourWork .img
+{
+	float: left;
+	width: 23%;
+	margin-right:2%;
+	padding: .5%;
+	border :.5px solid black;
+}
+.ourWork .img img
+{
+	border :1px solid red;
+}
+
+
+
+
+@media (max-width:  549px)  /* mobile & tablet*/
+{
+	.ourWork .img
+	{
+		width: 97%;
+	}
+
+}
+@media (max-width: 777px) and  (min-width: 550px)/* medium screen rules*/
+{
+	.ourWork .img
+	{
+		width: 31.333333%;
+	}
+}
+
+@media (min-width: 1200px)/* large screen rules*/
+{
+	.ourWork .img
+	{
+		width: 23%;
+	}
+}
+/* end ourWork */
+
+
+
+
+
+
+
+
+
+
+
+
+/* start Pricing */
+
+	.pricingTable{
+		background-color: #444;
+		color: #fff;
+		padding: 50px 0;
+		margin-top: 10px;
+	}
+
+	.pricingTable .h1{
+		margin: 0 0 20px;
+		font-size: 60px;
+	}
+	
+
+	.pricingTable ul{
+		list-style: none;
+		line-height: 2;
+		font-size: 18px;
+	}
+
+
+
+
+	.pricingTable .pricingPlan{
+		position: relative;
+		border:2px solid #fff;
+		padding: 20px 0 ;
+	}
+
+
+	.pricingTable h3{
+		margin: 0 0 20px;
+		font-size: 26px;
+	}
+
+
+	.pricingTable span{
+		display: inline-block;
+		margin: 0 0 10px;
+		font-size: 22px;
+		color: #bfbfbf;
+	}
+
+	@media (max-width: 700px) {
+		.pricingTable .pricingPlan{
+				width: 100%;
+				margin-bottom: 20px;
+			}
+	}
+	@media (min-width:700px) /* starts from medium screen rules*/
+	{
+			.pricingTable .pricingPlan:not(.Ultimate){
+				margin-right:1%; 
+			}
+			.pricingTable .pricingPlan{
+				width: 32.66%;
+			}
+			.pricingTable .pricingPlan.Plus{
+				left: 33.6666%;
+
+			}
+			.pricingTable .pricingPlan.Premium{
+				right: 33.6666%;
+
+			}
+
+
+
+	}
+/* end Pricing */
+
+
+
+
+
+
+
+
+
+/* Start What they say */
+			.they-say{
+				padding: 50px 0;
+			}
+			.they-say .h1{
+				font-size: 50px;
+				margin: 0 0 20px;
+				color: #555;
+			}
+			.they-say .person-say{
+				background-color: #eee;
+				padding: 20px;
+				margin: 0 0 20px;
+				border:1px solid #ddd;
+				float: left;
+			}
+			.they-say .person-say .avatar{
+				
+				margin-right: 20px;
+			}
+			.they-say .person-say img{
+				width:50px;
+				height: 50px;
+			}
+			.they-say .person-say p{
+				margin:0;
+				width: calc(100% - 70px)
+			}
+
+
+			@media (max-width: 699px){
+
+				.they-say .person-say .avatar{
+					float: none;
+					margin:auto;
+					text-align: center;
+				}
+				.they-say .person-say h3{
+					float: none;
+					text-align: center;
+				}
+
+				.they-say .person-say p{
+					float: none;
+					width: 100%;
+					text-align: center;
+				}
+
+			}
+
+
+
+			@media (max-width:985px )and (min-width: 700px){
+
+				.they-say .person-say:not(:first-of-type) .avatar{
+					float: none;
+					margin:auto;
+					text-align: center;
+				}
+				.they-say .person-say:not(:first-of-type) h3{
+					float: none;
+					text-align: center;
+				}
+
+				.they-say .person-say:not(:first-of-type) p{
+					float: none;
+					width: 100%;
+					text-align: center;
+				}
+
+			}
+
+			
+			@media(max-width:700px){
+
+				.they-say .person-say{
+					width: 100%; 
+				}
+			}
+
+			@media(min-width:700px){
+
+				.they-say .person-say:first-of-type{
+					width: 80%;
+					margin-left:10%; 
+				}
+				.they-say .person-say:not(:first-of-type){
+					width: 39%;
+				}
+				.they-say .person-say:last-of-type{
+					margin-left: 2%;
+				}
+
+				.they-say .person-say:nth-of-type(2){
+					margin-left: 10%;
+				}
+
+			}
+/* end What they say */
+
+
+
+
+
+
+
+/* start information */
+
+.information
+{
+	background:#EEE;
+	padding: 5% 0;
+	font-size: 18px; 
+	margin-bottom: 10px;
+}
+
+.information .h1
+{
+	font-size: 50px;
+	color: #848484;
+	margin-bottom: 3px;
+}
+.information  .info-list
+{
+	margin:auto;
+	width: 100%;
+}
+.information .info-list li
+{
+	display: inline-block;
+	background-color: #ddd;
+	padding: 5px;
+	font-size: 20px;
+	cursor: pointer;
+}
+@media(max-width: 580px)
+{
+	.information .info-list li
+	{
+		float: left;
+		width: 19.5%;
+		font-size: 11px;
+		margin-right: 1.5px;
+		text-align: center;
+	}
+
+	.information .info-content
+	{
+		font-size: 10px;
+	}
+	
+}
+
+.information .info-list li.active
+{
+	background-color: #fff;
+	color: cyan;
+	font-weight: bold;
+}
+
+.information .info-content div
+{
+	padding: 10px;
+	background-color: #fff;
+}
+.information .info-content div:not(:first-of-type)
+{
+	display: none;
+}
+/* end information */
+
+
+
+
+
+
+
+/* start footer */
+
+
+
+.footer{
+	background-color: #333;
+	color: #EEE;
+}
+.footer .copyright,
+.footer .design{
+	padding: 20px;
+	text-align: center;
+}
+@media(max-width: 768px)
+{
+	.footer .copyright,
+	.footer .design
+	{
+		width:100%;
+	}
+}
+@media(min-width: 768px)
+{
+	.footer .copyright,
+	.footer .design
+	{
+		width:50%;
+	}
+}
+
+/* end footer */
+
+
+
+
+
+
+
+@media (max-width:  767px) /* mobile & tablet*/
+{
+	.visible-xs
+	{
+		display: block !important;
+	}
+	.hidden-xs
+	{
+		display: none !important;
+	}
+	.resp
+	{
+		text-align: center;
+	}
+
+}
+@media (min-width: 768px) and (max-width: 991px)/* small screen rules*/
+{
+	.contaner
+	{
+		width: 750px;
+	}
+	.visible-sm
+	{
+		display: block !important;
+	}
+	.hidden-sm
+	{
+		display: none !important;
+	}
+}
+@media (min-width: 992px) and (max-width: 1999px)/* medium screen rules*/
+{
+	.contaner
+	{
+		width: 970px;
+
+	}
+	.visible-md
+	{
+		display: block !important;
+	}
+	.hidden-md
+	{
+		display: none !important;
+	}
+}
+
+@media (min-width: 1200px)/* large screen rules*/
+{
+	.contaner
+	{
+		width: 1170px;
+	}
+	.visible-lg
+	{
+		display: block !important;
+	}
+	.hidden-lg
+	{
+		display: none !important;
+	}
+}
+
+
+
+
+
+
+/* start Framwork */ 
+.clearFix
+{
+	clear: both;
+}
+.floatL{
+	float: left;
+}
+.floatR{
+	float: right;
+}
+.contaner
+{
+	margin: auto;
+	padding-left: 11%;
+    padding-right: 11%;
+    overflow: hidden;
+}
+
+
+.text-center 
+{
+	text-align: center;
+}
+
+.visible-xs ,
+.visible-sm ,
+.visible-md ,
+.visible-lg 
+{
+	display: none; 
+}
+
+.h1{
+	 font-size: 2em;
+}
+
+.resp
+{
+	line-height: 1.8;
+	font-size: 15px;
+}
+.resimg
+{
+	max-width: 100%
+}
+.img-red
+{
+	border-radius: 50%;
+}
+.img-thum
+{
+	padding: 3px;
+	background-color: #fff;
+	border :1px solid #ccc;
+}
+.classic-list
+{
+	list-style-type: none;
+	padding: 0;
+}
+
+/*end Framwork*/
